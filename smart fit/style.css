@@ -1,0 +1,308 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #171717;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #111;
+    color: white;
+    padding: 20px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header h1 span {
+    color: #f5df00;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #f5df00;
+}
+
+.btn-header {
+    background: #f5df00;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* BANNER */
+
+.banner {
+    min-height: 450px;
+
+    background:
+        linear-gradient(90deg, #000000dc, #00000030),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.banner-texto {
+    max-width: 600px;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    background: #f5df00;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #d6c300;
+    transform: scale(1.04);
+}
+
+/* BENEFÍCIOS */
+
+.beneficios {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.cards-beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card-beneficio {
+    background: white;
+    padding: 35px 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+}
+
+.card-beneficio h3 {
+    margin-bottom: 15px;
+}
+
+.card-beneficio p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* PLANOS */
+
+.planos {
+    background: #e9e9e9;
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.planos h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/* CARDS DOS PLANOS */
+
+.container-planos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.plano {
+    background: white;
+    width: 280px;
+    padding: 25px;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.plano:hover {
+    transform: translateY(-8px);
+}
+
+.plano h3 {
+    background: #171717;
+    color: #f5df00;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.preco {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d0bd00;
+    margin-top: 20px;
+}
+
+.mensalidade {
+    color: #777;
+    margin-top: 5px;
+}
+
+/* LISTA DE BENEFÍCIOS DOS PLANOS */
+
+.plano ul {
+    text-align: left;
+    margin: 25px 0;
+    padding-left: 20px;
+    line-height: 2;
+    flex-grow: 1;
+}
+
+/* DESTAQUE DO CARD */
+
+.destaque {
+    border: 3px solid #f5df00;
+}
+
+/* BOTÃO DOS PLANOS */
+
+.plano .botao {
+    width: 100%;
+    margin-top: auto;
+}
+
+.aviso {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* CONTATO */
+
+.contato {
+    background: #171717;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contato h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    margin-bottom: 25px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 750px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .banner h2 {
+        font-size: 34px;
+    }
+
+    .cards-beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-beneficio {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plano {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}

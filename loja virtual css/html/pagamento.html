@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="/loja virtual css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Minha Loja</h1>
+</header>
+
+<main class="pagamento">
+    <h2>Finalizar Compra</h2>
+    <a href="pagamento.html" class="btn-pagamento">ir para pagamento</a>
+
+    <form>
+        <h3>Dados pessoais</h3>
+
+        <input type="text" placeholder="Nome completo" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="Telefone">
+
+        <h3>Endereço de entrega</h3>
+
+        <input type="text" placeholder="Rua e número">
+        <input type="text" placeholder="Cidade">
+        <input type="text" placeholder="CEP">
+
+        <h3>Forma de pagamento</h3>
+
+        <label>
+            <input type="radio" name="pagamento" value="pix" required>
+            Pix
+        </label>
+
+        <label>
+            <input type="radio" name="pagamento" value="cartao">
+            Cartão de crédito
+        </label>
+
+        <label>
+            <input type="radio" name="pagamento" value="boleto">
+            Boleto
+        </label>
+
+        <h3>Resumo do pedido</h3>
+
+        <p>Produto: Camiseta</p>
+        <p>Quantidade: 1</p>
+        <p class="total">Total: R$ 59,90</p>
+
+        <button type="submit">Finalizar compra</button>
+    </form>
+</main>
+
+</body>
+</html>
